@@ -27,10 +27,6 @@ for i in range(math.floor(len(rucksacks)/3)):
   combined = [set(group[0]), set(group[1]), set(group[2])]
   x = min(combined[0].intersection(combined[1],combined[2]))
   priorities.append(priority(x))
-  # for x in combined:
-  #   if combined.count(x) == 3:
-  #     priorities.append(priority(x))
-  #     break
   groupMarker += 3
 
 print(sum(priorities))
